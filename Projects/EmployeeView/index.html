@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/Projects/EmployeeView/css/styles.css">
+  <link rel="stylesheet" href="/Projects/EmployeeView/css/bootstrap.css">
+  <title>EmployeeView</title>
+</head>
+
+<div id="top-nav">
+    <h4 class="nav-text p-text"><a href="/index.html">Portfolio</a></h4>   
+</div>
+
+<body id="page-body-color">
+    <div class="onBG">
+        <div style="height: 50px;"></div>
+        <h1>EmployeeView</h1>
+        <h4>Oh CRUD, who are our employees again?</h4>
+    </div>
+    
+    <table class="super-blurb">
+        <tr>
+            <td class="blurb">
+                <!-- html form for CRUD operations -->
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Full Name *</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                        <input type="text" name="fullName" id="fullName">
+                    </div>
+                    <div>
+                        <label>Employee ID</label>
+                        <input type="text" name="empId" id="empId">
+                    </div>
+                    <div>
+                        <label>Salary</label>
+                        <input type="text" name="salary" id="salary">
+                    </div>
+                    <div>
+                        <label>City</label>
+                        <input type="text" name="city" id="city">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+            <td class="blurb2">
+                <!-- table to list all records -->
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>Employee ID</th>
+                            <th>Salary</th>
+                            <th>City</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <div id="bottom-space"></div>
+
+    <script src="/Projects/EmployeeView/js/script.js"></script>
+</body>
+
+</html>

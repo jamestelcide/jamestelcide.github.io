@@ -1,0 +1,141 @@
+#page-body-color {
+    background: #1652F0;
+}
+
+#top-nav {
+    background: rgba(0, 0, 0, 0.760);
+    height: 50px;
+}
+
+.nav-text a {
+    color: white;
+    margin-left: 50px;
+}
+
+.super-blurb{
+    margin-left: 7%;
+}
+  
+.blurb {
+    background-color: white;
+    margin: 30px 30px 30px 10%;
+    width: 35%;
+    height: 550px;
+    text-align: center;
+    border-radius: 5%;
+    display: inline-block;
+}
+
+.blurb2 {
+    background-color: white;
+    margin-left: 0px;
+    width: 50%;
+    height: 550px;
+    text-align: center;
+    border-radius: 5%;
+    display: inline-flex;
+}
+
+.onBG {
+    color: white;
+    text-align: center;
+}
+
+body > table {
+    width: 80%;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+table.list {
+    width:100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even),table.list thead>tr {
+    background-color: #dddddd;
+}
+
+input[type=text], input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 30%;
+    background-color: #ddd;
+    color: #000;
+    padding: 14px 20px;
+    margin: 30px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form div.form-action-buttons {
+    text-align: center;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #0000ee;
+    margin-right: 4px;
+}
+
+label.validation-error {
+    color:   red;
+    margin-left: 5px;
+}
+
+.hide{
+    display:none;
+}
+
+#bottom-space {
+    height: 200px;
+}
+
+@media screen and (max-width: 750px) {
+    #top-nav{
+        background: rgba(0, 0, 0, 0.760);
+        height: 55px;
+        padding-top: 10px;
+        padding-right: 100px;
+        text-align: center;
+    }    
+
+    .nav-text a {
+        color: white;
+    }
+
+    .blurb {
+        background-color: white;
+        margin: 30px 30px 30px 10%;
+        width: 100%;
+        height: 550px;
+        text-align: center;
+        border-radius: 3%;
+    }
+
+    .blurb2 {
+        background-color: white;
+        margin-left: 10%;
+        width: 100%;
+        height: 550px;
+        text-align: center;
+        border-radius: 3%;
+    }
+}
